@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARCH JINN | GECƏ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #030205; /* Глубокий благородный темный тон */
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container { width: 100%; max-width: 400px; text-align: center; }
+        
+        /* ОБЛОЖКА АЛЬБОМА */
+        .cover {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            object-fit: cover;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.9), 0 0 30px rgba(157, 78, 221, 0.1);
+        }
+
+        h1 { font-size: 26px; letter-spacing: 7px; margin-bottom: 8px; text-transform: uppercase; font-weight: 700; }
+        .status { color: #9d4edd; font-size: 13px; margin-bottom: 40px; letter-spacing: 3px; text-transform: uppercase; font-weight: 500; }
+
+        /* КНОПКИ СТРИМИНГОВ */
+        .music-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .link-button {
+            background: #0f0b15;
+            border: 1px solid #24143a;
+            color: #e3daf2;
+            text-decoration: none;
+            padding: 18px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .link-button i { font-size: 20px; width: 30px; margin-right: 15px; color: #c77dff; }
+        .link-button:hover { 
+            background: #ffffff; 
+            color: #000000; 
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(199, 125, 255, 0.2);
+            border-color: #ffffff;
+        }
+        .link-button:hover i { color: #000000; }
+
+        /* СЕТКА СОЦСЕТЕЙ */
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .social-item {
+            background: #0f0b15;
+            border: 1px solid #24143a;
+            color: #c77dff;
+            padding: 15px;
+            border-radius: 12px;
+            font-size: 20px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+        }
+        .social-item:hover { 
+            background: #ffffff; 
+            color: #000000; 
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(199, 125, 255, 0.2);
+            border-color: #ffffff;
+        }
+
+        /* ПОДВАЛ И КОНТАКТЫ */
+        .footer { margin-top: 60px; font-size: 10px; color: #5a5464; letter-spacing: 2px; text-transform: uppercase; }
+        .booking { display: block; margin-bottom: 12px; color: #9d4edd; text-decoration: none; font-size: 12px; transition: color 0.3s; letter-spacing: 1.5px; }
+        .booking:hover { color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="cover.jpg" alt="MARCH JINN" class="cover" loading="eager">
+
+        <h1>MARCH JINN</h1>
+        <div class="status">GECƏ — OUT SOON</div>
+
+        <div class="music-links">
+            <a href="#" class="link-button"><i class="fab fa-apple"></i><span>Apple Music</span></a>
+            <a href="https://www.youtube.com/@marchjinn" class="link-button"><i class="fab fa-youtube"></i><span>YouTube Music</span></a>
+            <a href="#" class="link-button"><i class="fas fa-music"></i><span>Yandex Music</span></a>
+            <a href="#" class="link-button"><i class="fab fa-spotify"></i><span>Spotify</span></a>
+            <a href="https://soundcloud.com/marchjinn" class="link-button"><i class="fab fa-soundcloud"></i><span>SoundCloud</span></a>
+        </div>
+
+        <div class="social-grid">
+            <a href="https://instagram.com/marchjinn" class="social-item"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@marchjinn" class="social-item"><i class="fab fa-tiktok"></i></a>
+            <a href="https://t.me/marchjinn" class="social-item"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <div class="footer">
+            <a href="mailto:marchjinnmax@gmail.com" class="booking">marchjinnmax@gmail.com</a>
+            © 2026 MARCH JINN
+        </div>
+    </div>
+
+</body>
+</html>

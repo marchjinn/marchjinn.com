@@ -4,6 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MARCH JINN | GECƏ</title>
+    
+    <!-- СЕО МЕТА-ТЕГИ ДЛЯ ПОИСКОВИКОВ -->
+    <meta name="description" content="Официальный сайт артиста March Jinn. Ссылки на социальные сети и музыкальные платформы. Дебютный релиз GECƏ.">
+    <meta name="keywords" content="March Jinn, GECƏ, музыка, артист, трек, слушать, релиз, официальный сайт">
+    <link rel="canonical" href="https://marchjinn.com">
+
+    <!-- OPEN GRAPH (Чтобы ссылка красиво выглядела при отправке в Telegram, VK, WhatsApp) -->
+    <meta property="og:title" content="MARCH JINN | GECƏ">
+    <meta property="og:description" content="Официальный сайт артиста March Jinn. Ссылки на все платформы.">
+    <meta property="og:image" content="https://marchjinn.com/cover.webp">
+    <meta property="og:url" content="https://marchjinn.com">
+    <meta property="og:type" content="music.album">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -29,7 +42,16 @@
         }
 
         h1 { font-size: 26px; letter-spacing: 7px; margin-bottom: 8px; text-transform: uppercase; font-weight: 700; color: #ffffff; }
-        .status { color: #ffffff; font-size: 13px; margin-bottom: 40px; letter-spacing: 3px; text-transform: uppercase; font-weight: 500; }
+        
+        /* Заменили с div на h2 и сбросили отступы браузера, чтобы не ломать дизайн */
+        h2.status { 
+            color: #ffffff; 
+            font-size: 13px; 
+            margin: 0 0 40px 0; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            font-weight: 500; 
+        }
 
         /* КНОПКИ СТРИМИНГОВ */
         .music-links {
@@ -88,21 +110,46 @@
         .booking { display: block; margin-bottom: 12px; color: #ffffff; text-decoration: none; font-size: 12px; transition: color 0.3s; letter-spacing: 1.5px; }
         .booking:hover { color: #c77dff; }
     </style>
+
+    <!-- МИКРОРАЗМЕТКА JSON-LD (Главная магия для связки всех соцсетей) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicGroup",
+      "name": "March Jinn",
+      "url": "https://marchjinn.com",
+      "logo": "https://marchjinn.com/cover.webp",
+      "sameAs": [
+        "https://instagram.com/marchjinn",
+        "https://www.tiktok.com/@marchjinn",
+        "https://t.me/marchjinn",
+        "https://www.youtube.com/@marchjinn",
+        "https://soundcloud.com/marchjinn",
+        "https://vk.com/marchjinn",
+        "https://twitter.com/marchjinn",
+        "https://facebook.com/marchjinn"
+        /* Сюда через запятую ты можешь вписать ВООБЩЕ ВСЕ свои профили, даже если их кнопок нет на сайте. Робот их прочитает и свяжет с твоим именем! */
+      ]
+    }
+    </script>
 </head>
 <body>
 
     <div class="container">
-        <img src="cover.webp" alt="GECƏ" class="cover" loading="eager">
+        <!-- Улучшили alt-текст, чтобы обложка находилась в Google Картинках по запросу March Jinn -->
+        <img src="cover.webp" alt="March Jinn - GECƏ (Обложка альбома)" class="cover" loading="eager">
 
         <h1>GECƏ</h1>
-        <div class="status">March Jinn</div>
+        
+        <!-- Заменили div на h2. Для поисковика div — это пустота, а h2 — это важный заголовок, содержащий имя артиста -->
+        <h2 class="status">March Jinn</h2>
 
         <div class="music-links">
             <a href="#" class="link-button"><i class="fab fa-apple"></i><span>Apple Music</span></a>
             <a href="https://www.youtube.com/@marchjinn" class="link-button"><i class="fab fa-youtube"></i><span>YouTube Music</span></a>
             <a href="#" class="link-button"><i class="fas fa-music"></i><span>Yandex Music</span></a>
             <a href="#" class="link-button"><i class="fab fa-spotify"></i><span>Spotify</span></a>
-            <a href="https://soundcloud.com/marchjinn" class="link-button"><i class="fab fa-soundcloud"></i><span>SoundCloud</span></a>
+            <a href="https://soundcloud.com/soundcloud" class="link-button"><i class="fab fa-soundcloud"></i><span>SoundCloud</span></a>
         </div>
 
         <div class="social-grid">

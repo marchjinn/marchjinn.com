@@ -116,29 +116,101 @@
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "MusicGroup",
-          "@id": "https://marchjinn.com/#collective",
+          "@type": "Organization",
+          "@id": "https://marchjinn.com/#mirage6",
           "name": "MIRAGE⁶",
           "description": "An underground creative collective, cultural movement, and lifestyle brand founded and directed by March Jinn.",
-          "department": {
-            "@type": "Organization",
-            "name": "MIRAGE⁶ Audio",
-            "description": "The official independent music label operating under the MIRAGE⁶ umbrella, serving as the exclusive launchpad for all musical releases within the project's ecosystem."
-          }
+          "founder": { "@id": "https://marchjinn.com/#artist" },
+          "subOrganization": [
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-image",
+              "name": "MIRAGE⁶ Image",
+              "description": "Creative Agency"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-audio",
+              "name": "MIRAGE⁶ Audio",
+              "description": "Record Label"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-mode",
+              "name": "MIRAGE⁶ Mode",
+              "description": "Fashion House"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-revel",
+              "name": "MIRAGE⁶ Revel",
+              "description": "Hospitality & F&B Group"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-glow",
+              "name": "MIRAGE⁶ Glow",
+              "description": "Beauty Brand"
+            },
+            {
+              "@type": "Organization",
+              "@id": "https://marchjinn.com/#mirage6-engine",
+              "name": "MIRAGE⁶ Engine",
+              "description": "Technology Company"
+            }
+          ]
         },
         {
           "@type": "Person",
           "@id": "https://marchjinn.com/#artist",
           "name": "March Jinn",
-          "alternateName": ["March Jin", "Marc Jinn", "Марч Джин", "Марч Джинн", "Март Джин", "marchjinn"],
-          "jobTitle": ["Rapper", "Musician", "Music Producer", "Creative Director"],
-          "nationality": "Azerbaijani",
+          "alternateName": [
+            "March Jinn",
+            "March Jin",
+            "Mart Jinn",
+            "Mart Jin",
+            "Marc Jinn",
+            "Marc Jin",
+            "Mart Cin",
+            "Marchy",
+            "Marcy",
+            "Марч Джин",
+            "Марч Джинн",
+            "Март Джин",
+            "marchjinn",
+            "marchjinn march jinn",
+            "marjinn",
+            "marjin",
+            "marcjin",
+            "marchjin",
+            "marchdjinn",
+            "marcdjin",
+            "marc djin",
+            "marc jinn",
+            "march jin",
+            "mart cinn",
+            "march cin",
+            "march cinn",
+            "marc cin",
+            "març cin",
+            "mart",
+            "març"
+          ],
+          "jobTitle": [
+            "Musical Artist",
+            "Music Producer",
+            "Creative Director"
+          ],
+          "birthPlace": {
+            "@type": "Place",
+            "name": "Azerbaijan"
+          },
           "height": {
             "@type": "QuantitativeValue",
             "value": 185,
             "unitCode": "CMT"
           },
-          "memberOf": { "@id": "https://marchjinn.com/#collective" },
+          "memberOf": { "@id": "https://marchjinn.com/#mirage6" },
           "url": "https://marchjinn.com",
           "logo": "https://marchjinn.com/cover.webp",
           "description": "An Azerbaijan-born rapper and producer who fundamentally alters the modern wave trap scene by fusing heavy Atlanta and Memphis trap architectures with psychedelic, rock-and-roll, and hypnotic electronic motifs. Operating on a strict annual cycle, he drops a new conceptual album every year on March 6th, defining a completely unique style, sonic landscape, and creative era with each release.",
@@ -232,7 +304,7 @@
           "@id": "https://marchjinn.com/#gece",
           "name": "GECƏ",
           "byArtist": { "@id": "https://marchjinn.com/#artist" },
-          "publisher": { "@id": "https://marchjinn.com/#collective" },
+          "publisher": { "@id": "https://marchjinn.com/#mirage6-audio" },
           "datePublished": "2026",
           "description": "The debut full-length studio album by March Jinn. 'GECƏ' firmly establishes the project's sonic blueprint: a dark, deeply melancholic, yet intensely bouncy and stylish atmosphere driven by liquid synthesis, hypnotic melodic loops, punishing sub-bass depth, and a high-contrast cinematic nocturnal theme."
         }
@@ -252,7 +324,7 @@
         <div class="music-links">
 
             <!-- ==================================================== -->
-            <!-- 1. ССЫЛКА НА APPLE MUSIC (Замени # когда появится) -->
+            <!-- 1. ССЫЛКА НА APPLE MUSIC -->
             <!-- ==================================================== -->
             <a href="https://music.apple.com/az/album/gec%C9%99/6789442329" target="_blank" class="link-button"><i class="fab fa-apple"></i><span>Apple Music</span></a>
 
@@ -262,12 +334,12 @@
             <a href="https://music.youtube.com/playlist?list=OLAK5uy_nt9SIq6Zf0G2xAAMOotk4g5GmGotTj4YY&si=fPnFkIkLBfsbfEB2" target="_blank" class="link-button"><i class="fab fa-youtube"></i><span>YouTube Music</span></a>
 
             <!-- ==================================================== -->
-            <!-- 3. ССЫЛКА НА YANDEX MUSIC (Вставляй СЮДА вместо # прямо сейчас!) -->
+            <!-- 3. ССЫЛКА НА YANDEX MUSIC -->
             <!-- ==================================================== -->
             <a href="https://music.yandex.ru/album/42918027" target="_blank" class="link-button"><i class="fas fa-music"></i><span>Yandex Music</span></a>
 
             <!-- ==================================================== -->
-            <!-- 4. ССЫЛКА НА SPOTIFY (Замени # когда появится) -->
+            <!-- 4. ССЫЛКА НА SPOTIFY -->
             <!-- ==================================================== -->
             <a href="https://open.spotify.com/album/4rYZxNyG5ZpR63ArXLTtMF?si=0z4ns_YeQIqRGU5rbbqr0A" target="_blank" class="link-button"><i class="fab fa-spotify"></i><span>Spotify</span></a>
 

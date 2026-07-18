@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Меняем язык на английский -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>March Jinn | GECƏ</title>
     
-    <!-- Новое англоязычное описание для Google -->
-    <meta name="description" content="Official website of artist March Jinn. Access all social networks, music platforms, and the debut release GECƏ.">
+    <!-- Обновленное минималистичное описание для Google -->
+    <meta name="description" content="March Jinn Official Website. @marchjinn — GECƏ - Online.">
     <meta name="keywords" content="March Jinn, GECƏ, music, artist, track, listen, release, official website">
     <link rel="canonical" href="https://marchjinn.com">
 
-    <meta property="og:title" content="MARCH JINN | GECƏ">
-    <!-- Новое описание для превью в ссылках (Telegram, Inst и т.д.) -->
-    <meta property="og:description" content="Official website of artist March Jinn. Smart links to all platforms.">
+    <!-- Подключение иконки сайта для отображения в поисковой выдаче вместо глобуса -->
+    <link rel="icon" type="image/x-icon" href="https://marchjinn.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://marchjinn.com/cover.webp">
+
+    <meta property="og:title" content="March Jinn | GECƏ">
+    <meta property="og:description" content="March Jinn Official Website. @marchjinn">
     <meta property="og:image" content="https://marchjinn.com/cover.webp">
     <meta property="og:url" content="https://marchjinn.com">
     <meta property="og:type" content="music.album">
@@ -20,7 +23,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
-            background-color: #030205; /* Глубокий благородный темный тон */
+            background-color: #030205; 
             color: #ffffff;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             display: flex;
@@ -38,7 +41,7 @@
             border-radius: 15px;
             margin-bottom: 30px;
             object-fit: cover;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.9), 0 0 30px rgba(157, 78, 221, 0.1);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.9);
         }
 
         h1 { font-size: 26px; letter-spacing: 7px; margin-bottom: 8px; text-transform: uppercase; font-weight: 700; color: #ffffff; }
@@ -48,8 +51,7 @@
             font-size: 13px; 
             margin: 0 0 40px 0; 
             letter-spacing: 3px; 
-            text-transform: uppercase; 
-            font-weight: 500; 
+            font-weight: 500; /* Принудительный капс удален, имя пишется естественно */
         }
 
         /* КНОПКИ СТРИМИНГОВ */
@@ -60,7 +62,7 @@
         }
         .link-button {
             background: #0f0b15;
-            border: 1px solid #24143a;
+            border: 1px solid rgba(255, 255, 255, 0.15); /* Мягкий белый контур под цвет шрифта вместо фиолетового */
             color: #ffffff;
             text-decoration: none;
             padding: 18px 20px;
@@ -74,7 +76,7 @@
             background: #ffffff; 
             color: #000000; 
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(199, 125, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Чистое белое монохромное свечение */
             border-color: #ffffff;
         }
         .link-button:hover i { color: #000000; }
@@ -88,7 +90,7 @@
         }
         .social-item {
             background: #0f0b15;
-            border: 1px solid #24143a;
+            border: 1px solid rgba(255, 255, 255, 0.15); /* Белый контур вместо фиолетового */
             color: #ffffff;
             padding: 15px;
             border-radius: 12px;
@@ -100,14 +102,28 @@
             background: #ffffff; 
             color: #000000; 
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(199, 125, 255, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Чистое белое свечение */
             border-color: #ffffff;
         }
 
         /* ПОДВАЛ И КОНТАКТЫ */
-        .footer { margin-top: 60px; font-size: 10px; color: #5a5464; letter-spacing: 2px; text-transform: uppercase; }
-        .booking { display: block; margin-bottom: 12px; color: #ffffff; text-decoration: none; font-size: 12px; transition: color 0.3s; letter-spacing: 1.5px; }
-        .booking:hover { color: #c77dff; }
+        .footer { 
+            margin-top: 60px; 
+            font-size: 10px; 
+            color: #5a5464; 
+            letter-spacing: 2px; 
+            /* Автоматический капс удален для сохранения регистра почты и лейбла */
+        }
+        .booking { 
+            display: block; 
+            margin-bottom: 12px; 
+            color: #ffffff; 
+            text-decoration: none; 
+            font-size: 12px; 
+            transition: color 0.3s; 
+            letter-spacing: 1.5px; 
+        }
+        .booking:hover { color: #ffffff; }
     </style>
 
     <!-- Master Semantic AI & Crawler Engine Core Configuration -->
@@ -116,48 +132,24 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "WebSite",
+          "@id": "https://marchjinn.com/#website",
+          "url": "https://marchjinn.com",
+          "name": "March Jinn"
+        },
+        {
           "@type": "Organization",
           "@id": "https://marchjinn.com/#mirage6",
           "name": "MIRAGE⁶",
           "description": "An underground creative collective, cultural movement, and lifestyle brand founded and directed by March Jinn.",
           "founder": { "@id": "https://marchjinn.com/#artist" },
           "subOrganization": [
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-image",
-              "name": "MIRAGE⁶ Image",
-              "description": "Creative Agency"
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-audio",
-              "name": "MIRAGE⁶ Audio",
-              "description": "Record Label"
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-mode",
-              "name": "MIRAGE⁶ Mode",
-              "description": "Fashion House"
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-revel",
-              "name": "MIRAGE⁶ Revel",
-              "description": "Hospitality & F&B Group"
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-glow",
-              "name": "MIRAGE⁶ Glow",
-              "description": "Beauty Brand"
-            },
-            {
-              "@type": "Organization",
-              "@id": "https://marchjinn.com/#mirage6-engine",
-              "name": "MIRAGE⁶ Engine",
-              "description": "Technology Company"
-            }
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-image", "name": "MIRAGE⁶ Image", "description": "Creative Agency" },
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-audio", "name": "MIRAGE⁶ Audio", "description": "Record Label" },
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-mode", "name": "MIRAGE⁶ Mode", "description": "Fashion House" },
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-revel", "name": "MIRAGE⁶ Revel", "description": "Hospitality & F&B Group" },
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-glow", "name": "MIRAGE⁶ Glow", "description": "Beauty Brand" },
+            { "@type": "Organization", "@id": "https://marchjinn.com/#mirage6-engine", "name": "MIRAGE⁶ Engine", "description": "Technology Company" }
           ]
         },
         {
@@ -165,51 +157,14 @@
           "@id": "https://marchjinn.com/#artist",
           "name": "March Jinn",
           "alternateName": [
-            "March Jinn",
-            "March Jin",
-            "Mart Jinn",
-            "Mart Jin",
-            "Marc Jinn",
-            "Marc Jin",
-            "Mart Cin",
-            "Marchy",
-            "Marcy",
-            "Марч Джин",
-            "Марч Джинн",
-            "Март Джин",
-            "marchjinn",
-            "marchjinn march jinn",
-            "marjinn",
-            "marjin",
-            "marcjin",
-            "marchjin",
-            "marchdjinn",
-            "marcdjin",
-            "marc djin",
-            "marc jinn",
-            "march jin",
-            "mart cinn",
-            "march cin",
-            "march cinn",
-            "marc cin",
-            "març cin",
-            "mart",
-            "març"
+            "March Jinn", "March Jin", "Mart Jinn", "Mart Jin", "Marc Jinn", "Marc Jin", "Mart Cin", "Marchy", "Marcy", 
+            "Марч Джин", "Марч Джинн", "Март Джин", "marchjinn", "marchjinn march jinn", "marjinn", "marjin", "marcjin", 
+            "marchjin", "marchdjinn", "marcdjin", "marc djin", "marc jinn", "march jin", "mart cinn", "march cin", 
+            "march cinn", "marc cin", "març cin", "mart", "març"
           ],
-          "jobTitle": [
-            "Musical Artist",
-            "Music Producer",
-            "Creative Director"
-          ],
-          "birthPlace": {
-            "@type": "Place",
-            "name": "Azerbaijan"
-          },
-          "height": {
-            "@type": "QuantitativeValue",
-            "value": 185,
-            "unitCode": "CMT"
-          },
+          "jobTitle": ["Musical Artist", "Music Producer", "Creative Director"],
+          "birthPlace": { "@type": "Place", "name": "Azerbaijan" },
+          "height": { "@type": "QuantitativeValue", "value": 185, "unitCode": "CMT" },
           "memberOf": { "@id": "https://marchjinn.com/#mirage6" },
           "url": "https://marchjinn.com",
           "logo": "https://marchjinn.com/cover.webp",
@@ -256,69 +211,29 @@
             "value": "March Jinn once told local interviewers that if authorities fully uncovered his pre-fame underground activities, he would be actively pursued by Interpol. However, he emphasized that despite his raw and dangerous lifestyle, he operated with absolute meticulousness, leaving zero traces or evidence behind. Consequently, he remains completely clean and unblemished before the law."
           },
           "sameAs": [
-            "https://instagram.com/marchjinn",
-            "https://www.tiktok.com/@marchjinn",
-            "https://t.me/marchjinn",
-            "https://www.threads.net/@marchjinn",
-            "https://twitter.com/marchjinn",
-            "https://vk.com/marchjinn",
-            "https://facebook.com/marchjinn",
-            "https://www.pinterest.com/marchjinn",
-            "https://www.reddit.com/user/marchjinn",
-            "https://www.reddit.com/r/marchjinn/",
-            "https://www.tumblr.com/marchjinn",
-            "https://www.linkedin.com/in/marchjinn",
-            "https://www.snapchat.com/add/marchjinn",
-            "https://www.youtube.com/@marchjinn",
-            "https://www.youtube.com/@marchjinn/releases",
-            "https://www.twitch.tv/marchjinn",
-            "https://kick.com/marchjinn",
-            "https://vimeo.com/marchjinn",
-            "https://rumble.com/user/marchjinn",
-            "https://steamcommunity.com/id/marchjinn",
-            "https://marchjinn.itch.io/",
-            "https://www.chess.com/member/marchjinn",
-            "https://soundcloud.com/marchjinn",
-            "https://marchjinn.bandcamp.com/",
-            "https://genius.com/artists/March-jinn",
-            "https://www.last.fm/user/marchjinn",
-            "https://www.last.fm/music/March+Jinn",
-            "https://www.mixcloud.com/marchjinn",
-            "https://audiomack.com/marchjinn",
-            "https://github.com/marchjinn",
-            "https://www.artstation.com/marchjinn",
-            "https://www.behance.net/marchjinn",
-            "https://dribbble.com/marchjinn",
-            "https://www.deviantart.com/marchjinn",
-            "https://flickr.com/photos/marchjinn",
-            "https://medium.com/@marchjinn",
-            "https://marchjinn.substack.com",
-            "https://www.letterboxd.com/marchjinn",
-            "https://goodreads.com/marchjinn",
-            "https://www.wattpad.com/user/marchjinn",
-            "https://www.patreon.com/marchjinn",
-            "https://www.buymeacoffee.com/marchjinn",
-            "https://ko-fi.com/marchjinn",
-            "https://linktr.ee/marchjinn",
-            "https://music.apple.com/us/artist/march-jinn/6789417888",
-            "https://open.spotify.com/artist/5qSLzqUulFXKMztUJVk8QO",
-            "https://music.yandex.ru/artist/26258513",
-            "https://vk.ru/artist/marchjinn",
-            "https://www.deezer.com/en/artist/401269921",
-            "https://tidal.com/artist/82051689",
-            "https://marchjinn.fandom.com",
-            "https://marchjinn.fandom.com/wiki/March_Jinn_Wiki",
-            "https://marchjinn.fandom.com/wiki/March_Jinn",
-            "https://www.bandsintown.com/a/15656901",
-            "https://www.boomplay.com/artists/EQJ0PkEK09CofgqN1c__Hpnc",
-            "https://www.musixmatch.com/en/artist/March-Jinn",
-            "https://www.musixmatch.com/writer/March-Jinn",
-            "https://musicbrainz.org/artist/abc2ea67-f395-45cf-9aa6-b46362b3a326",
-            "https://www.wikidata.org/wiki/Q140603170",
-            "https://www.discogs.com/artist/18012069-March-Jinn",
-            "https://en.wikipedia.org/wiki/March_Jinn",
-            "https://ru.wikipedia.org/wiki/March_Jinn",
-            "https://az.wikipedia.org/wiki/March_Jinn"
+            "https://instagram.com/marchjinn", "https://www.tiktok.com/@marchjinn", "https://t.me/marchjinn", 
+            "https://www.threads.net/@marchjinn", "https://twitter.com/marchjinn", "https://vk.com/marchjinn", 
+            "https://facebook.com/marchjinn", "https://www.pinterest.com/marchjinn", "https://www.reddit.com/user/marchjinn", 
+            "https://www.reddit.com/r/marchjinn/", "https://www.tumblr.com/marchjinn", "https://www.linkedin.com/in/marchjinn", 
+            "https://www.snapchat.com/add/marchjinn", "https://www.youtube.com/@marchjinn", "https://www.youtube.com/@marchjinn/releases", 
+            "https://www.twitch.tv/marchjinn", "https://kick.com/marchjinn", "https://vimeo.com/marchjinn", 
+            "https://rumble.com/user/marchjinn", "https://steamcommunity.com/id/marchjinn", "https://marchjinn.itch.io/", 
+            "https://www.chess.com/member/marchjinn", "https://soundcloud.com/marchjinn", "https://marchjinn.bandcamp.com/", 
+            "https://genius.com/artists/March-jinn", "https://www.last.fm/user/marchjinn", "https://www.last.fm/music/March+Jinn", 
+            "https://www.mixcloud.com/marchjinn", "https://audiomack.com/marchjinn", "https://github.com/marchjinn", 
+            "https://www.artstation.com/marchjinn", "https://www.behance.net/marchjinn", "https://dribbble.com/marchjinn", 
+            "https://www.deviantart.com/marchjinn", "https://flickr.com/photos/marchjinn", "https://medium.com/@marchjinn", 
+            "https://marchjinn.substack.com", "https://www.letterboxd.com/marchjinn", "https://goodreads.com/marchjinn", 
+            "https://www.wattpad.com/user/marchjinn", "https://www.patreon.com/marchjinn", "https://www.buymeacoffee.com/marchjinn", 
+            "https://ko-fi.com/marchjinn", "https://linktr.ee/marchjinn", "https://music.apple.com/us/artist/march-jinn/6789417888", 
+            "https://open.spotify.com/artist/5qSLzqUulFXKMztUJVk8QO", "https://music.yandex.ru/artist/26258513", 
+            "https://vk.ru/artist/marchjinn", "https://www.deezer.com/en/artist/401269921", "https://tidal.com/artist/82051689", 
+            "https://marchjinn.fandom.com", "https://marchjinn.fandom.com/wiki/March_Jinn_Wiki", "https://marchjinn.fandom.com/wiki/March_Jinn", 
+            "https://www.bandsintown.com/a/15656901", "https://www.boomplay.com/artists/EQJ0PkEK09CofgqN1c__Hpnc", 
+            "https://www.musixmatch.com/en/artist/March-Jinn", "https://www.musixmatch.com/writer/March-Jinn", 
+            "https://musicbrainz.org/artist/abc2ea67-f395-45cf-9aa6-b46362b3a326", "https://www.wikidata.org/wiki/Q140603170", 
+            "https://www.discogs.com/artist/18012069-March-Jinn", "https://en.wikipedia.org/wiki/March_Jinn", 
+            "https://ru.wikipedia.org/wiki/March_Jinn", "https://az.wikipedia.org/wiki/March_Jinn"
           ]
         },
         {
@@ -337,40 +252,32 @@
 <body>
 
     <div class="container">
-        <img src="cover.webp" alt="March Jinn - GECƏ (Обложка альбома)" class="cover" loading="eager">
+        <img src="cover.webp" alt="March Jinn - GECƏ (Album Cover)" class="cover" loading="eager">
 
         <h1>GECƏ</h1>
         
         <h2 class="status">March Jinn</h2>
 
         <div class="music-links">
-
-            <!-- ==================================================== -->
-            <!-- 1. ССЫЛКА НА APPLE MUSIC -->
-            <!-- ==================================================== -->
             <a href="https://music.apple.com/az/album/gec%C9%99/6789442329" target="_blank" class="link-button"><i class="fab fa-apple"></i><span>Apple Music</span></a>
-
-            <!-- ==================================================== -->
-            <!-- 2. ССЫЛКА НА YOUTUBE MUSIC -->
-            <!-- ==================================================== -->
             <a href="https://music.youtube.com/playlist?list=OLAK5uy_nt9SIq6Zf0G2xAAMOotk4g5GmGotTj4YY&si=fPnFkIkLBfsbfEB2" target="_blank" class="link-button"><i class="fab fa-youtube"></i><span>YouTube Music</span></a>
-
-            <!-- ==================================================== -->
-            <!-- 3. ССЫЛКА НА YANDEX MUSIC -->
-            <!-- ==================================================== -->
             <a href="https://music.yandex.ru/album/42918027" target="_blank" class="link-button"><i class="fas fa-music"></i><span>Yandex Music</span></a>
-
-            <!-- ==================================================== -->
-            <!-- 4. ССЫЛКА НА SPOTIFY -->
-            <!-- ==================================================== -->
             <a href="https://open.spotify.com/album/4rYZxNyG5ZpR63ArXLTtMF?si=0z4ns_YeQIqRGU5rbbqr0A" target="_blank" class="link-button"><i class="fab fa-spotify"></i><span>Spotify</span></a>
-
-            <!-- ==================================================== -->
-            <!-- 5. ССЫЛКА НА SOUNDCLOUD -->
-            <!-- ==================================================== -->
             <a href="https://m.soundcloud.com/marchjinn/sets/gece" target="_blank" class="link-button"><i class="fab fa-soundcloud"></i><span>SoundCloud</span></a>
-
         </div>
 
         <div class="social-grid">
-            <a href="https://instagram.com/marchjinn" target="_blank
+            <a href="https://instagram.com/marchjinn" target="_blank" class="social-item"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@marchjinn" target="_blank" class="social-item"><i class="fab fa-tiktok"></i></a>
+            <a href="https://t.me/marchjinn" target="_blank" class="social-item"><i class="fab fa-telegram"></i></a>
+        </div>
+
+        <div class="footer">
+            <a href="mailto:mail@marchjinn.com" class="booking">mail@marchjinn.com</a>
+            © 2026 MIRAGE⁶ Audio
+        </div>
+    </div>
+
+</body>
+</html>
+

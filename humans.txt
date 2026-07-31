@@ -1,8 +1,16 @@
 /* TEAM */
-Artist & Director: March Jinn
-Label: MIRAGE⁶ Audio
-Site: https://marchjinn.com
+  Artist, Producer & Creative Director: March Jinn
+  Label & Collective: MIRAGE⁶ (MIRAGE⁶ Audio)
+  Official Website: https://marchjinn.com
+  Main Handle: @marchjinn
 
-/* SITE */
-Last update: 2026/07/31
-Language: English / Azerbaijani / Russian
+/* SITE & TECH */
+  Standards: HTML5, CSS3, Schema.org (JSON-LD), GEO / LLM-optimized
+  Hosting: GitHub Pages
+  Domain: marchjinn.com
+  Language: English, Azerbaijani, Russian, Turkish
+  Last Updated: 2026/07/31
+
+/* LORE & STATEMENT */
+  "True art must be inherently provocative."
+  Annual Release Cycle: Every March 6th.

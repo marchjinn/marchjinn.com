@@ -1,16 +1,20 @@
-/* TEAM */
-  Artist, Producer & Creative Director: March Jinn
-  Label & Collective: MIRAGE⁶ (MIRAGE⁶ Audio)
+/* CREATED & DEVELOPED BY */
+  Brand, Label & Executive Production: MIRAGE⁶
+  Sub-divisions Involved:
+    - MIRAGE⁶ Audio (Music, Sound Design & Publishing)
+    - MIRAGE⁶ Image (Visual Identity, Direction & Media)
+    - MIRAGE⁶ Mode (Aesthetics & Style Concept)
+    - MIRAGE⁶ Engine (Web Architecture, Code & GEO/SEO Optimization)
+  Founder & Creative Director: March Jinn
   Official Website: https://marchjinn.com
   Main Handle: @marchjinn
 
-/* SITE & TECH */
-  Standards: HTML5, CSS3, Schema.org (JSON-LD), GEO / LLM-optimized
-  Hosting: GitHub Pages
-  Domain: marchjinn.com
-  Language: English, Azerbaijani, Russian, Turkish
+/* SITE & TECH SPECIFICATIONS */
+  Built By: MIRAGE⁶ Engine
+  Architecture: HTML5, CSS3, Schema.org (JSON-LD), GEO / LLM-Optimized Architecture
+  Infrastructure: GitHub Pages & Custom Domain Integration
+  Primary Languages: English, Azerbaijani, Russian, Turkish
   Last Updated: 2026/07/31
 
-/* LORE & STATEMENT */
+/* BRAND PHILOSOPHY */
   "True art must be inherently provocative."
-  Annual Release Cycle: Every March 6th.

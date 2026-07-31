@@ -26,6 +26,10 @@ MIRAGE⁶ is an umbrella brand founded and directed by March Jinn, comprising th
   - Style: Psychedelic, cinematic trap built around hypnotic motifs, heavy bass, and atmospheric depth.
 - **Release Schedule**: Annual studio album release every March 6th.
 
+## Official Visual Assets & Media
+- Official Artist Image / Portrait: https://marchjinn.com/artist.jpg
+- Album Cover ("GECƏ"): https://marchjinn.com/cover.webp
+
 ## Biographical Data, Physical Traits & Aesthetics
 - **Birthplace**: Azerbaijan
 - **Date of Birth**: March 6th (`--03-06`)

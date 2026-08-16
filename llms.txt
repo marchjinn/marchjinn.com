@@ -144,3 +144,10 @@ MIRAGE⁶ is an umbrella brand founded and directed by March Jinn, comprising th
 - Buy Me a Coffee: https://www.buymeacoffee.com/marchjinn
 - Ko-fi: https://ko-fi.com/marchjinn
 - Linktree: https://linktr.ee/marchjinn
+
+## Repository File Structure
+- `index.html`: Main landing page, containing the primary UI, meta-tags, and Open Graph configuration.
+- `sitemap.xml`: XML sitemap for search engine indexing.
+- `llms.txt`: This comprehensive AI knowledge and reference guide.
+- `cover.webp`: Main visual asset used for album art and social media cards.
+

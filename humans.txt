@@ -14,7 +14,7 @@
   Architecture: HTML5, CSS3, Schema.org (JSON-LD), GEO / LLM-Optimized Architecture
   Infrastructure: GitHub Pages & Custom Domain Integration
   Primary Languages: English, Azerbaijani, Russian, Turkish
-  Last Updated: 2026/07/31
+  Last Updated: 2026/08/16
 
 /* BRAND PHILOSOPHY */
   "True art must be inherently provocative."

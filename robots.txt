@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 
-# Direct AI Context & Sitemap Links
+# Sitemap Index
 Sitemap: https://marchjinn.com/sitemap.xml
-Sitemap: https://marchjinn.com/llms.txt
+
+# LLM / AI Context
+# https://marchjinn.com/llms.txt
